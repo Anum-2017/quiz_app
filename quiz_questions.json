@@ -1,0 +1,922 @@
+{
+    "Python Basics": [
+        {
+            "question": "What is the correct file extension for Python files?",
+            "options": [".pyt", ".pt", ".py", ".python"],
+            "answer": ".py",
+            "explanation": "Python files use the .py extension to indicate they contain Python code."
+        },
+        {
+            "question": "Which function is used to display text in Python?",
+            "options": ["print()", "show()", "echo()", "display()"],
+            "answer": "print()",
+            "explanation": "The print() function is used to display output to the console in Python."
+        },
+        {
+            "question": "Which function is used to get the data type of a variable?",
+            "options": ["type()", "typeof()", "getType()", "varType()"],
+            "answer": "type()",
+            "explanation": "The type() function returns the data type of a given variable."
+        },
+        {
+            "question": "Which of the following is NOT a valid variable name in Python?",
+            "options": ["_var", "var2", "Var_name", "2var"],
+            "answer": "2var",
+            "explanation": "Variable names cannot start with a number, making '2var' invalid."
+        },
+        {
+            "question": "Which keyword is used to define a function in Python?",
+            "options": ["define", "def", "func", "function"],
+            "answer": "def",
+            "explanation": "Functions in Python are defined using the 'def' keyword."
+        },
+        {
+            "question": "Which data type is used to store True or False values?",
+            "options": ["int", "bool", "string", "char"],
+            "answer": "bool",
+            "explanation": "The 'bool' data type stores boolean values, which can be either True or False."
+        },
+        {
+            "question": "What is the output of 3 * 'Python'?",
+            "options": ["PythonPythonPython", "3Python", "Python3", "Error"],
+            "answer": "PythonPythonPython",
+            "explanation": "Multiplying a string by a number repeats the string that many times."
+        },
+        {
+            "question": "Which operator is used for exponentiation in Python?",
+            "options": ["pow", "**", "^", "exp"],
+            "answer": "**",
+            "explanation": "The '**' operator is used for exponentiation in Python (e.g., 2**3 = 8)."
+        },
+        {
+            "question": "Which function can be used to convert a string to an integer?",
+            "options": ["str()", "int()", "bool()", "float()"],
+            "answer": "int()",
+            "explanation": "The int() function converts a string containing a valid integer into an integer type."
+        },
+        {
+            "question": "Which function is used to get the absolute value of a number in Python?",
+            "options": ["absolute()", "value()", "fabs()", "abs()"],
+            "answer": "abs()",
+            "explanation": "The abs() function returns the absolute value of a number, removing any negative sign."
+        }
+    ],
+    "Control Flow": [
+        {
+            "question": "Which keyword is used for conditional statements in Python?",
+            "options": ["if", "switch", "cond", "case"],
+            "answer": "if",
+            "explanation": "The 'if' keyword is used to create conditional statements in Python."
+        },
+        {
+            "question": "Which loop is used when the number of iterations is known?",
+            "options": ["do-while", "for", "loop", "while"],
+            "answer": "for",
+            "explanation": "The 'for' loop is used when the number of iterations is known beforehand."
+        },
+        {
+            "question": "What is the output of '5 > 3 and 2 < 4'?",
+            "options": ["True", "None", "False", "Error"],
+            "answer": "True",
+            "explanation": "Both conditions in the expression are true, so the result is True."
+        },
+        {
+            "question": "Which statement is used to exit a loop?",
+            "options": ["break", "stop", "exit", "end"],
+            "answer": "break",
+            "explanation": "The 'break' statement is used to exit a loop prematurely."
+        },
+        {
+            "question": "Which statement skips the rest of the loop's code and jumps to the next iteration?",
+            "options": ["continue", "pass", "skip", "jump"],
+            "answer": "continue",
+            "explanation": "The 'continue' statement skips the rest of the code inside the loop and moves to the next iteration."
+        },
+        {
+            "question": "What is the default else condition in an if-else statement?",
+            "options": ["Executes if condition is true", "Executes always", "Executes if all conditions fail", "Does nothing"],
+            "answer": "Executes if all conditions fail",
+            "explanation": "The 'else' block runs only when all 'if' and 'elif' conditions evaluate to false."
+        },
+        {
+            "question": "Which loop executes at least once, regardless of condition?",
+            "options": ["for", "repeat", "while", "do-while"],
+            "answer": "do-while",
+            "explanation": "A 'do-while' loop (not natively available in Python) executes at least once before checking the condition."
+        },
+        {
+            "question": "What does 'elif' stand for in Python?",
+            "options": ["Else If", "Else Loop", "Extended If", "Else Iteration"],
+            "answer": "Else If",
+            "explanation": "'elif' stands for 'Else If' and is used for multiple conditional checks."
+        },
+        {
+            "question": "Which logical operator represents 'or' in Python?",
+            "options": ["or", "any", "|", "||"],
+            "answer": "or",
+            "explanation": "The 'or' keyword is the logical operator for 'or' conditions in Python."
+        },
+        {
+            "question": "Which keyword is used to create an infinite loop?",
+            "options": ["while True", "repeat", "loop forever", "for(;;)"],
+            "answer": "while True",
+            "explanation": "Using 'while True' creates an infinite loop that runs until explicitly broken."
+        }
+    ],
+    "Functions": [
+        {
+            "question": "How do you define a function in Python?",
+            "options": [
+                "func",
+                "define",
+                "def",
+                "function"
+            ],
+            "answer": "def",
+            "explanation": "In Python, functions are defined using the 'def' keyword followed by the function name and parentheses."
+        },
+        {
+            "question": "What keyword is used to return a value from a function?",
+            "options": [
+                "send",
+                "yield",
+                "return",
+                "give"
+            ],
+            "answer": "return",
+            "explanation": "The 'return' keyword is used to send a result back from a function to the caller."
+        },
+        {
+            "question": "Which keyword is used for optional arguments with a default value?",
+            "options": [
+                "=",
+                "optional",
+                "default",
+                "param"
+            ],
+            "answer": "=",
+            "explanation": "The '=' operator is used to assign default values to function parameters, making them optional."
+        },
+        {
+            "question": "What is a lambda function in Python?",
+            "options": [
+                "Generator function",
+                "Loop function",
+                "Anonymous function",
+                "Recursive function"
+            ],
+            "answer": "Anonymous function",
+            "explanation": "A lambda function is a small anonymous function defined using the 'lambda' keyword."
+        },
+        {
+            "question": "Which built-in function gets the number of arguments passed to a function?",
+            "options": [
+                "args()",
+                "count()",
+                "len()",
+                "None"
+            ],
+            "answer": "None",
+            "explanation": "Python does not have a built-in function that directly counts the number of arguments. However, 'len()' can be used on *args to determine the number of positional arguments."
+        },
+        {
+            "question": "What is the purpose of the 'pass' statement in a function?",
+            "options": [
+                "To do nothing",
+                "To exit the function",
+                "To raise an error",
+                "To return a value"
+            ],
+            "answer": "To do nothing",
+            "explanation": "The 'pass' statement acts as a placeholder, allowing you to define a function without adding any code inside it."
+        },
+        {
+            "question": "Which operator is used for function argument unpacking?",
+            "options": [
+                "hash (#)",
+                "asterisk (*)",
+                "at symbol (@)",
+                "ampersand (&)"
+            ],
+            "answer": "asterisk (*)",
+            "explanation": "The '*' operator is used to unpack arguments when calling a function or to accept multiple arguments as a tuple."
+        },
+        {
+            "question": "What does 'return None' do in a function?",
+            "options": [
+                "Raises an error",
+                "Returns zero",
+                "Ends the program",
+                "Returns no value"
+            ],
+            "answer": "Returns no value",
+            "explanation": "'return None' explicitly returns the 'None' value, which indicates that the function does not return a meaningful result."
+        },
+        {
+            "question": "How can a function accept an unlimited number of positional arguments?",
+            "options": [
+                "arg[]",
+                "*args",
+                "**kwargs",
+                "unlimited=True"
+            ],
+            "answer": "*args",
+            "explanation": "The '*args' syntax allows a function to accept a variable number of positional arguments as a tuple."
+        },
+        {
+            "question": "Which function converts a function into a generator?",
+            "options": [
+                "lambda",
+                "gen",
+                "yield",
+                "return"
+            ],
+            "answer": "yield",
+            "explanation": "The 'yield' keyword is used to create a generator function, which produces values one at a time and maintains state between calls."
+        }
+    ],
+        "Lists & Tuples": [
+          {
+            "question": "Which of the following is a key difference between a list and a tuple in Python?",
+            "options": [
+              "Lists are immutable, tuples are mutable",
+              "Tuples are immutable, lists are mutable",
+              "Both lists and tuples are mutable",
+              "There is no difference"
+            ],
+            "answer": "Tuples are immutable, lists are mutable",
+            "explanation": "Lists are mutable, meaning their elements can be changed after creation, while tuples are immutable and cannot be modified once created."
+          },
+          {
+            "question": "How do you define an empty list in Python?",
+            "options": [
+              "[]",
+              "()",
+              "list()",
+              "Both [] and list()"
+            ],
+            "answer": "Both [] and list()",
+            "explanation": "An empty list can be created using `[]` or the `list()` function. The `()` syntax is used for tuples, not lists."
+          },
+          {
+            "question": "Which method is used to add an element to the end of a list?",
+            "options": [
+              "add()",
+              "append()",
+              "insert()",
+              "extend()"
+            ],
+            "answer": "append()",
+            "explanation": "The `append()` method adds an element to the end of a list, whereas `insert()` adds at a specific index, and `extend()` adds multiple elements."
+          },
+          {
+            "question": "What will be the output of tuple((1, 2, 3))?",
+            "options": [
+              "(1, 2, 3)",
+              "[1, 2, 3]",
+              "{1, 2, 3}",
+              "Error"
+            ],
+            "answer": "(1, 2, 3)",
+            "explanation": "The `tuple()` function converts an iterable into a tuple. Since `(1, 2, 3)` is already a tuple, it remains unchanged."
+          },
+          {
+            "question": "How can you access the last element of a list named 'my_list'?",
+            "options": [
+              "my_list[last]",
+              "my_list[-1]",
+              "my_list[len(my_list)]",
+              "my_list[len(my_list)-2]"
+            ],
+            "answer": "my_list[-1]",
+            "explanation": "Using a negative index like `-1` retrieves the last element in a list, while `len(my_list)-1` would also work but requires more typing."
+          },
+          {
+            "question": "Which of the following operations can be performed on tuples?",
+            "options": [
+              "Appending elements",
+              "Removing elements",
+              "Concatenation",
+              "Sorting elements"
+            ],
+            "answer": "Concatenation",
+            "explanation": "Tuples are immutable, so elements cannot be added or removed. However, concatenation (`tuple1 + tuple2`) creates a new tuple combining both."
+          },
+          {
+            "question": "How do you convert a list to a tuple in Python?",
+            "options": [
+              "list_to_tuple(list)",
+              "tuple(list)",
+              "convert(list, tuple)",
+              "list.convert(tuple)"
+            ],
+            "answer": "tuple(list)",
+            "explanation": "The `tuple()` function takes an iterable (like a list) and converts it into a tuple."
+          },
+          {
+            "question": "What will be the output of the following code? \n my_tuple = (1, 2, 3) \n my_tuple[1] = 4",
+            "options": [
+              "(1, 4, 3)",
+              "(1, 2, 3, 4)",
+              "Error",
+              "None of the above"
+            ],
+            "answer": "Error",
+            "explanation": "Since tuples are immutable, trying to change an element using `my_tuple[1] = 4` will result in a TypeError."
+          },
+          {
+            "question": "Which function is used to find the length of a list or tuple?",
+            "options": [
+              "size()",
+              "count()",
+              "length()",
+              "len()"
+            ],
+            "answer": "len()",
+            "explanation": "The `len()` function returns the number of elements in a list or tuple. The `count()` method is used to count occurrences of a specific element."
+          },
+          {
+            "question": "Which of the following is TRUE about tuples?",
+            "options": [
+              "Tuples are faster than lists for iteration",
+              "Tuples can be modified",
+              "Tuples are always of fixed length",
+              "Tuples consume more memory than lists"
+            ],
+            "answer": "Tuples are faster than lists for iteration",
+            "explanation": "Tuples are optimized for iteration and consume slightly less memory than lists, making them faster in certain scenarios."
+          }
+        ],
+            "Dictionaries & Sets": [
+              {
+                "question": "Which of the following is used to define a dictionary in Python?",
+                "options": [
+                  "[]",
+                  "()",
+                  "{}",
+                  "dict()"
+                ],
+                "answer": "{}",
+                "explanation": "Dictionaries in Python are defined using curly braces `{}` or the `dict()` constructor. The other options are used for lists `[]`, tuples `()`, and the `dict()` function."
+              },
+              {
+                "question": "How do you access the value of a key in a dictionary?",
+                "options": [
+                  "dict.key",
+                  "dict[key]",
+                  "dict->key",
+                  "dict:get(key)"
+                ],
+                "answer": "dict[key]",
+                "explanation": "The correct way to access a dictionary value is using `dict[key]`. The dot notation (`dict.key`) only works for objects, and `dict:get(key)` is incorrect syntax."
+              },
+              {
+                "question": "Which method is used to remove a key-value pair from a dictionary?",
+                "options": [
+                  "remove()",
+                  "delete()",
+                  "pop()",
+                  "discard()"
+                ],
+                "answer": "pop()",
+                "explanation": "The `pop()` method removes a key-value pair from a dictionary and returns the value of the removed key. `remove()` and `discard()` are used for sets."
+              },
+              {
+                "question": "Which of the following statements about sets is true?",
+                "options": [
+                  "Sets allow duplicate elements",
+                  "Sets are unordered collections",
+                  "Sets support indexing",
+                  "Sets are immutable"
+                ],
+                "answer": "Sets are unordered collections",
+                "explanation": "Sets are unordered, meaning elements have no specific order and cannot be accessed by index. They do not allow duplicate elements but are mutable."
+              },
+              {
+                "question": "How can you add an element to a set?",
+                "options": [
+                  "add()",
+                  "append()",
+                  "insert()",
+                  "update()"
+                ],
+                "answer": "add()",
+                "explanation": "The `add()` method adds a single element to a set. `append()` and `insert()` are used for lists, while `update()` is used to add multiple elements."
+              },
+              {
+                "question": "Which method is used to get all keys from a dictionary?",
+                "options": [
+                  "keys()",
+                  "values()",
+                  "items()",
+                  "get_keys()"
+                ],
+                "answer": "keys()",
+                "explanation": "The `keys()` method returns all the keys in a dictionary. `values()` returns all values, `items()` returns key-value pairs, and `get_keys()` is incorrect syntax."
+              },
+              {
+                "question": "What will be the result of the following code? \n my_set = {1, 2, 3, 3, 4} \n print(my_set)",
+                "options": [
+                  "{1, 2, 3, 3, 4}",
+                  "{1, 2, 3, 4}",
+                  "[1, 2, 3, 4]",
+                  "Error"
+                ],
+                "answer": "{1, 2, 3, 4}",
+                "explanation": "Sets do not allow duplicate values, so `{1, 2, 3, 3, 4}` automatically becomes `{1, 2, 3, 4}` when printed."
+              },
+              {
+                "question": "How can you merge two sets in Python?",
+                "options": [
+                  "merge()",
+                  "combine()",
+                  "union()",
+                  "append()"
+                ],
+                "answer": "union()",
+                "explanation": "The `union()` method combines two sets without duplicates. `merge()` and `combine()` are not valid set methods, and `append()` is for lists."
+              },
+              {
+                "question": "Which method is used to remove all elements from a dictionary?",
+                "options": [
+                  "clear()",
+                  "remove_all()",
+                  "delete()",
+                  "discard_all()"
+                ],
+                "answer": "clear()",
+                "explanation": "The `clear()` method removes all key-value pairs from a dictionary, leaving it empty. The other methods do not exist for dictionaries."
+              },
+              {
+                "question": "Which of the following is TRUE about dictionaries?",
+                "options": [
+                  "Dictionary keys must be mutable",
+                  "Dictionaries maintain insertion order",
+                  "Dictionaries allow duplicate keys",
+                  "Dictionaries do not support iteration"
+                ],
+                "answer": "Dictionaries maintain insertion order",
+                "explanation": "Since Python 3.7, dictionaries maintain the order of key-value pairs as they were inserted. Dictionary keys must be immutable, and dictionaries do not allow duplicate keys."
+              }
+            ],          
+   "Strings": [
+    {
+        "question": "Which method is used to convert a string to lowercase in Python?",
+        "options": [
+            "lowercase()",
+            "toLower()",
+            "lower()",
+            "convert()"
+        ],
+        "answer": "lower()",
+        "explanation": "The `lower()` method converts all uppercase letters in a string to lowercase. Example: `'HELLO'.lower()` returns `'hello'`."
+    },
+    {
+        "question": "How do you access the first character of a string in Python?",
+        "options": [
+            "str[0]",
+            "str(0)",
+            "str.first()",
+            "first(str)"
+        ],
+        "answer": "str[0]",
+        "explanation": "In Python, strings are indexed starting from 0. Using `str[0]` retrieves the first character. Example: `'Python'[0]` returns `'P'`."
+    },
+    {
+        "question": "What will be the output of the following code? 'hello'.upper()",
+        "options": [
+            "hello",
+            "HELLO",
+            "Error",
+            "'hello'.upper()"
+        ],
+        "answer": "HELLO",
+        "explanation": "The `upper()` method converts all lowercase letters in a string to uppercase. Example: `'hello'.upper()` returns `'HELLO'`."
+    },
+    {
+        "question": "Which method is used to check if a string contains only alphabetic characters in Python?",
+        "options": [
+            "isAlpha()",
+            "isalpha()",
+            "isletters()",
+            "containsAlpha()"
+        ],
+        "answer": "isalpha()",
+        "explanation": "The `isalpha()` method checks if a string consists only of alphabetic characters (a-z, A-Z) and returns `True` or `False`. Example: `'Hello'.isalpha()` returns `True`."
+    },
+    {
+        "question": "What does the method strip() do to a string?",
+        "options": [
+            "Removes all spaces",
+            "Removes leading and trailing whitespace",
+            "Converts to uppercase",
+            "Splits the string into a list"
+        ],
+        "answer": "Removes leading and trailing whitespace",
+        "explanation": "The `strip()` method removes spaces, tabs, and newline characters from the beginning and end of a string. Example: `'  hello  '.strip()` returns `'hello'`."
+    },
+    {
+        "question": "How can you concatenate two strings in Python?",
+        "options": [
+            "str1 + str2",
+            "str1.concat(str2)",
+            "str1.append(str2)",
+            "str1.add(str2)"
+        ],
+        "answer": "str1 + str2",
+        "explanation": "In Python, strings can be concatenated using the `+` operator. Example: `'Hello' + ' World'` returns `'Hello World'`."
+    },
+    {
+        "question": "Which method returns the number of occurrences of a substring in a string?",
+        "options": [
+            "find()",
+            "count()",
+            "index()",
+            "search()"
+        ],
+        "answer": "count()",
+        "explanation": "The `count()` method counts the occurrences of a substring in a string. Example: `'banana'.count('a')` returns `3`."
+    },
+    {
+        "question": "What is the result of the following expression? 'Python'[:3]",
+        "options": [
+            "'Pyt'",
+            "'Py'",
+            "'Pyth'",
+            "'Python'"
+        ],
+        "answer": "'Pyt'",
+        "explanation": "In slicing, `[:3]` means 'take all characters from the start up to index 3 (excluding index 3)'. Example: `'Python'[:3]` returns `'Pyt'`."
+    },
+    {
+        "question": "Which method is used to split a string into a list of substrings?",
+        "options": [
+            "split()",
+            "partition()",
+            "divide()",
+            "separate()"
+        ],
+        "answer": "split()",
+        "explanation": "The `split()` method divides a string into a list of substrings based on a delimiter (default is whitespace). Example: `'Hello World'.split()` returns `['Hello', 'World']`."
+    },
+    {
+        "question": "What does the string method 'replace()' do in Python?",
+        "options": [
+            "Replaces all occurrences of a character",
+            "Removes a substring",
+            "Replaces a substring with another substring",
+            "Converts to uppercase"
+        ],
+        "answer": "Replaces a substring with another substring",
+        "explanation": "The `replace()` method replaces all occurrences of a specified substring with another substring. Example: `'Hello World'.replace('World', 'Python')` returns `'Hello Python'`."
+    }
+   ],
+    "User Input & Output": [
+        {
+            "question": "Which function is used to take input from the user in Python?",
+            "options": [
+                "scanf()",
+                "input()",
+                "cin>>",
+                "get()"
+            ],
+            "answer": "input()",
+            "explanation": "The `input()` function is used to take user input in Python. It reads the input as a string unless explicitly converted to another data type."
+        },
+        {
+            "question": "What is the default type of input received from the user?",
+            "options": [
+                "int",
+                "float",
+                "string",
+                "list"
+            ],
+            "answer": "string",
+            "explanation": "By default, the `input()` function returns user input as a string. You need to convert it explicitly to other types like `int` or `float`."
+        },
+        {
+            "question": "Which function is used to display output in Python?",
+            "options": [
+                "print()",
+                "display()",
+                "echo()",
+                "show()"
+            ],
+            "answer": "print()",
+            "explanation": "The `print()` function is used to display output in Python. It prints the specified message to the console."
+        },
+        {
+            "question": "How do you take integer input from the user?",
+            "options": [
+                "int(input())",
+                "input(int())",
+                "getInt()",
+                "inputInteger()"
+            ],
+            "answer": "int(input())",
+            "explanation": "To take an integer input, wrap `input()` inside `int()`, like `int(input())`, which converts the input string into an integer."
+        },
+        {
+            "question": "Which escape sequence is used to print a new line?",
+            "options": [
+                "\\n",
+                "\\t",
+                "\\r",
+                "\\b"
+            ],
+            "answer": "\\n",
+            "explanation": "The `\\n` escape sequence is used to print a new line in Python. It moves the cursor to the next line."
+        },
+        {
+            "question": "What is the function of the 'end' parameter in print()?",
+            "options": [
+                "It defines how output ends",
+                "It defines how output starts",
+                "It changes font size",
+                "It is not used in Python"
+            ],
+            "answer": "It defines how output ends",
+            "explanation": "The `end` parameter in `print()` specifies what to print at the end instead of the default newline (`\n`)."
+        },
+        {
+            "question": "Which separator is used to concatenate values in print()?",
+            "options": [
+                "sep",
+                "end",
+                "connect",
+                "concat"
+            ],
+            "answer": "sep",
+            "explanation": "The `sep` parameter in `print()` specifies the separator between multiple values. By default, it is a space."
+        },
+        {
+            "question": "How do you format strings using placeholders?",
+            "options": [
+                "% formatting",
+                "format()",
+                "f-strings",
+                "All of the above"
+            ],
+            "answer": "All of the above",
+            "explanation": "Python supports multiple string formatting methods: `% formatting`, `.format()`, and f-strings (`f\"{}\"`)."
+        },
+        {
+            "question": "Which function can be used to take multiple inputs in one line?",
+            "options": [
+                "split()",
+                "map()",
+                "join()",
+                "combine()"
+            ],
+            "answer": "split()",
+            "explanation": "The `split()` function is used to take multiple inputs in a single line by splitting the input string into a list of values."
+        },
+        {
+            "question": "Which function is used to clear the output screen?",
+            "options": [
+                "os.system('clear')",
+                "os.system('cls')",
+                "Both A and B",
+                "None of the above"
+            ],
+            "answer": "Both A and B",
+            "explanation": "On Unix/Linux, `os.system('clear')` is used, and on Windows, `os.system('cls')` is used to clear the output screen."
+        }
+    ],
+    "Exception Handling": [
+    {
+        "question": "Which keyword is used to handle exceptions in Python?",
+        "options": [
+            "error",
+            "try",
+            "catch",
+            "exception"
+        ],
+        "answer": "try",
+        "explanation": "The 'try' keyword is used to define a block of code that may raise an exception. If an exception occurs, it can be handled using the 'except' block."
+    },
+    {
+        "question": "What will happen if an exception is not handled in Python?",
+        "options": [
+            "The program crashes",
+            "The program runs normally",
+            "The exception is ignored",
+            "None of the above"
+        ],
+        "answer": "The program crashes",
+        "explanation": "If an exception is not handled, Python will stop executing the program and display a traceback error message, leading to a crash."
+    },
+    {
+        "question": "Which block is always executed in exception handling?",
+        "options": [
+            "try",
+            "catch",
+            "finally",
+            "except"
+        ],
+        "answer": "finally",
+        "explanation": "The 'finally' block is always executed, regardless of whether an exception occurred or not. It is typically used for cleanup actions like closing files or releasing resources."
+    },
+    {
+        "question": "Which statement is used to raise an exception manually?",
+        "options": [
+            "throw",
+            "raise",
+            "except",
+            "error"
+        ],
+        "answer": "raise",
+        "explanation": "The 'raise' keyword is used to manually trigger an exception in Python, allowing programmers to create custom error messages."
+    },
+    {
+        "question": "Which type of exception occurs when dividing by zero?",
+        "options": [
+            "ValueError",
+            "ZeroDivisionError",
+            "TypeError",
+            "SyntaxError"
+        ],
+        "answer": "ZeroDivisionError",
+        "explanation": "A 'ZeroDivisionError' is raised when a number is divided by zero, as division by zero is mathematically undefined."
+    },
+    {
+        "question": "Which module provides system-specific parameters and functions?",
+        "options": [
+            "sys",
+            "os",
+            "exception",
+            "error"
+        ],
+        "answer": "sys",
+        "explanation": "The 'sys' module in Python provides access to system-specific parameters, such as command-line arguments and exception handling utilities."
+    },
+    {
+        "question": "What does the 'except' block do in Python?",
+        "options": [
+            "Handles exceptions",
+            "Ignores errors",
+            "Stops execution",
+            "Runs always"
+        ],
+        "answer": "Handles exceptions",
+        "explanation": "The 'except' block is used to catch and handle exceptions that occur in the 'try' block, preventing the program from crashing."
+    },
+    {
+        "question": "Which function retrieves the details of an exception?",
+        "options": [
+            "sys.exc_info()",
+            "error.info()",
+            "exception.details()",
+            "traceback()"
+        ],
+        "answer": "sys.exc_info()",
+        "explanation": "The 'sys.exc_info()' function returns a tuple containing information about the last exception that was raised, helping in debugging."
+    },
+    {
+        "question": "How do you catch multiple exceptions in one except block?",
+        "options": [
+            "except (TypeError, ValueError)",
+            "except [TypeError, ValueError]",
+            "except {TypeError, ValueError}",
+            "except: TypeError, ValueError"
+        ],
+        "answer": "except (TypeError, ValueError)",
+        "explanation": "To handle multiple exceptions in one block, use a tuple format like 'except (TypeError, ValueError):'. The incorrect options use invalid syntax."
+    },
+    {
+        "question": "Which exception is raised when an undefined variable is accessed?",
+        "options": [
+            "NameError",
+            "KeyError",
+            "IndexError",
+            "AttributeError"
+        ],
+        "answer": "NameError",
+        "explanation": "A 'NameError' occurs when a variable is referenced before being defined in the program."
+    }
+  ],
+    "File Handling": [
+        {
+            "question": "Which function is used to open a file in Python?",
+            "options": ["open()", "read()", "write()", "file()"],
+            "answer": "open()",
+            "explanation": "The 'open()' function is used to open a file in Python. It returns a file object that allows reading or writing."
+        },
+        {
+            "question": "Which mode is used to open a file for writing and creates the file if it does not exist?",
+            "options": ["r", "w", "a", "x"],
+            "answer": "w",
+            "explanation": "The 'w' mode opens a file for writing. If the file exists, it is overwritten; if it does not exist, a new file is created."
+        },
+        {
+            "question": "Which method is used to read the entire contents of a file?",
+            "options": ["read()", "readline()", "readlines()", "write()"],
+            "answer": "read()",
+            "explanation": "The 'read()' method reads the entire content of a file as a single string."
+        },
+        {
+            "question": "What happens if you try to open a file that does not exist in 'r' mode?",
+            "options": ["A new file is created", "An error occurs", "File opens in read mode", "File is overwritten"],
+            "answer": "An error occurs",
+            "explanation": "If a file does not exist and is opened in 'r' mode, Python raises a FileNotFoundError."
+        },
+        {
+            "question": "Which method is used to close a file in Python?",
+            "options": ["end()", "stop()", "terminate()", "close()"],
+            "answer": "close()",
+            "explanation": "The 'close()' method is used to properly close an open file and free system resources."
+        },
+        {
+            "question": "Which mode allows appending data to an existing file without overwriting it?",
+            "options": ["w", "r", "a", "x"],
+            "answer": "a",
+            "explanation": "The 'a' (append) mode allows adding data to an existing file without erasing its contents."
+        },
+        {
+            "question": "Which statement is used to automatically close a file after its block is executed?",
+            "options": ["with open()", "auto close()", "file.close()", "exit file()"],
+            "answer": "with open()",
+            "explanation": "The 'with open()' statement ensures that the file is automatically closed when the block is exited, preventing resource leaks."
+        },
+        {
+            "question": "Which function is used to write data to a file?",
+            "options": ["write()", "print()", "append()", "insert()"],
+            "answer": "write()",
+            "explanation": "The 'write()' method is used to write a string to a file."
+        },
+        {
+            "question": "Which method is used to read a file line by line?",
+            "options": ["read()", "readlines()", "readline()", "file.read()"],
+            "answer": "readline()",
+            "explanation": "The 'readline()' method reads a file one line at a time, making it useful for processing large files efficiently."
+        },
+        {
+            "question": "Which of the following file modes is used to create a file but raises an error if the file already exists?",
+            "options": ["w", "a", "x", "r"],
+            "answer": "x",
+            "explanation": "The 'x' mode creates a file but raises a FileExistsError if the file already exists."
+        }
+    ],
+        "Basic OOP (Object-Oriented Programming)": [
+            {
+                "question": "Which of the following best describes Object-Oriented Programming?",
+                "options": ["A programming paradigm based on functions", "A programming paradigm based on objects and classes", "A way to write procedural code", "A method to write scripts"],
+                "answer": "A programming paradigm based on objects and classes",
+                "explanation": "OOP is a programming paradigm that organizes code using objects and classes to enhance modularity and reusability."
+            },
+            {
+                "question": "Which keyword is used to define a class in Python?",
+                "options": ["class", "def", "object", "new"],
+                "answer": "class",
+                "explanation": "The 'class' keyword is used to define a new class in Python."
+            },
+            {
+                "question": "Which method is called when an object is created?",
+                "options": ["__start__", "__create__", "__init__", "__object__"],
+                "answer": "__init__",
+                "explanation": "The '__init__' method is a special method called automatically when an object of a class is instantiated."
+            },
+            {
+                "question": "Which of the following is not a feature of OOP?",
+                "options": ["Encapsulation", "Inheritance", "Polymorphism", "Compilation"],
+                "answer": "Compilation",
+                "explanation": "Compilation is not a feature of OOP; OOP includes encapsulation, inheritance, and polymorphism."
+            },
+            {
+                "question": "Which concept allows one class to inherit properties from another class?",
+                "options": ["Encapsulation", "Abstraction", "Polymorphism", "Inheritance"],
+                "answer": "Inheritance",
+                "explanation": "Inheritance allows one class (child class) to inherit properties and methods from another class (parent class)."
+            },
+            {
+                "question": "Which term refers to restricting access to certain details of an object?",
+                "options": ["Polymorphism", "Abstraction", "Encapsulation", "Inheritance"],
+                "answer": "Encapsulation",
+                "explanation": "Encapsulation is the process of restricting direct access to some details of an object to maintain security and integrity."
+            },
+            {
+                "question": "What is the process of defining multiple methods with the same name but different implementations?",
+                "options": ["Encapsulation", "Inheritance", "Polymorphism", "Abstraction"],
+                "answer": "Polymorphism",
+                "explanation": "Polymorphism allows the same method to have different implementations, providing flexibility in code."
+            },
+            {
+                "question": "What is an instance of a class called?",
+                "options": ["Method", "Object", "Attribute", "Function"],
+                "answer": "Object",
+                "explanation": "An object is an instance of a class that has attributes and behaviors defined by the class."
+            },
+            {
+                "question": "Which symbol is used to indicate a private variable in Python?",
+                "options": ["__", "_", "$", "@@"],
+                "answer": "__",
+                "explanation": "A variable with double underscores (__) before its name in Python is considered private and should not be accessed directly outside the class."
+            },
+            {
+                "question": "What is the purpose of the 'self' keyword in Python classes?",
+                "options": ["It refers to the current class", "It refers to the parent class", "It is used to define static methods", "It refers to the instance of the class"],
+                "answer": "It refers to the instance of the class",
+                "explanation": "The 'self' keyword represents the instance of the class and is used to access attributes and methods of that instance."
+            }
+        ]    
+}
