@@ -164,17 +164,45 @@ elif st.session_state.page == "quiz":
         st.write(f"**Progress: {int(progress * 100)}% Completed**")
 
 # Score Page
+# elif st.session_state.page == "score":
+#     st.markdown('<h2 style="text-align: center;">🎉 Quiz Completed! 🎉</h2>', unsafe_allow_html=True)
+
+#     # Score display with better UI
+#     st.markdown(f"""
+#     <div style="border: 2px solid #28a745; padding: 20px; border-radius: 10px; text-align: center; margin-top: 20px;">
+#         <h2 style="color: #28a745;">🏆 Final Score: {st.session_state.score} / {len(st.session_state.shuffled_questions)}</h2>
+#         <p style="margin-top: 15px;">Great job, {st.session_state.player_name}! Keep practicing and improving! 🚀</p>
+#     </div>
+#     <br><br>
+# """, unsafe_allow_html=True)
+
 elif st.session_state.page == "score":
     st.markdown('<h2 style="text-align: center;">🎉 Quiz Completed! 🎉</h2>', unsafe_allow_html=True)
 
-    # Score display with better UI
+    total_questions = len(st.session_state.shuffled_questions)
+    score = st.session_state.score
+    player_name = st.session_state.player_name
+
+    # Dynamic feedback messages
+    if score == total_questions:
+        message = f"🌟 Outstanding, {player_name}! You got a perfect score! 🚀"
+    elif score >= total_questions * 0.8:
+        message = f"👏 Well done, {player_name}! You really know your Python! 🔥"
+    elif score >= total_questions * 0.5:
+        message = f"👍 Good effort, {player_name}! Keep practicing and you'll master it! 💪"
+    elif score > 0:
+        message = f"😊 Don't worry, {player_name}! Every mistake is a step toward learning. Try again and improve! 🔄"
+    else:
+        message = f"😅 It's okay, {player_name}. Learning takes time! Keep trying, and you'll get better! 💡"
+
+    # Score display with improved UI
     st.markdown(f"""
     <div style="border: 2px solid #28a745; padding: 20px; border-radius: 10px; text-align: center; margin-top: 20px;">
-        <h2 style="color: #28a745;">🏆 Final Score: {st.session_state.score} / {len(st.session_state.shuffled_questions)}</h2>
-        <p style="margin-top: 15px;">Great job, {st.session_state.player_name}! Keep practicing and improving! 🚀</p>
+        <h2 style="color: #28a745;">🏆 Final Score: {score} / {total_questions}</h2>
+        <p style="margin-top: 15px;">{message}</p>
     </div>
     <br><br>
-""", unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
 
     # Restart button
     if st.button("🔄 Restart Quiz"):
